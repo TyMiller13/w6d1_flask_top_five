@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP FIVE</title>
+</head>
+<body>
+    <h1>Here our my top five favorite basketball players!</h1>
+    <h3>Not in order because that's tough!</h3>
+        <ol>
+            {% for players in basketball_players %}
+            <li>{{players.upper()}}</li>
+            {% endfor %}
+        </ol>
+</body>
+</html>
